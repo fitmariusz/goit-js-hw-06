@@ -33,42 +33,5 @@ const ulImage = document.querySelector("ul");
 ulImage.classList.add("ulStyle");
 const imagesList = images.map((imageParameter) =>`<li><img  class="imgStyle" src="${imageParameter.url}" alt="${imageParameter.alt}"  width="150px" higth="100px" ></img></li>`)
     .join("");
-console.log(imagesList);
   ulImage.insertAdjacentHTML("beforeend", imagesList)
-// const liList = document.createElement("li");
-// const image = document.createElement("img"); 
-// image.src = imgData.url;
-// image.alt = imgData.alt;
-// liList.append(image);
-// ulImage.append(liList);
 
-// const ulListimg = document.querySelector("images");
-
-// ul.forEach((item) => {
-//   const liList = document.createElement("li");
-//   const image = document.createElement("img");
-//   image.src = item.src;
-//   image.alt = item.alt;
-//   ulList.append(liList);
-// });
-
-
-// // const imagesList = document.querySelector("#images")
-// images.forEach(img => {
-//   const image = document.createElement("img");
-// // image.src = "https://placeimg.com/640/480/nature";
-// // image.alt 
-//  });
-
-// const image = document.createElement("img");
-// console.log(images);
-// // image.src = "https://placeimg.com/640/480/nature";
-// // image.alt = "Nature";
-// // console.log(image);// <img src="https://placeimg.com/640/480/nature" alt="Nature" />
-// // });
-// // ingredients.forEach((item) => {
-// //   const liList = document.createElement("li");
-// //   liList.textContent = item;
-// //   liList.classList.add("item");
-// //   ulList.append(liList);
-// // });
