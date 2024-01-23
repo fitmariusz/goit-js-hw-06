@@ -12,14 +12,31 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+// ../css/task-03.css
+function addCssFile() {
+// var file = location.pathname.split( "" ).pop();
 
+  var link = document.createElement("link");
+link.rel = "stylesheet";
+link.href = `css/task-03.css`;
+// link.type = "text/css";
+
+// link.media = "screen,print";
+
+document.getElementsByTagName( "head" )[0].appendChild( link );
+}
+
+
+
+addCssFile()
 const ulImage = document.querySelector("ul");
-const imagesList = images.map((imageParameter) =>`<li class="img"><img src="${imageParameter.url}" alt="${imageParameter.alt}"></img></li>`)
+ulImage.classList.add("ulStyle");
+const imagesList = images.map((imageParameter) =>`<li><img  class="imgStyle" src="${imageParameter.url}" alt="${imageParameter.alt}"  width="150px" higth="100px" ></img></li>`)
     .join("");
 console.log(imagesList);
   ulImage.insertAdjacentHTML("beforeend", imagesList)
 // const liList = document.createElement("li");
-// const image = document.createElement("img");
+// const image = document.createElement("img"); 
 // image.src = imgData.url;
 // image.alt = imgData.alt;
 // liList.append(image);
