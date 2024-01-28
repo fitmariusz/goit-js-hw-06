@@ -21,7 +21,7 @@ function createBox()
 
     box.style.backgroundColor = randomColor;
     box.setAttribute('class', `divBox`);
-    box.style.height = `${startSize + startSize * i}px`;
+    box.style.height = `${startSize + stepSize * i}px`;
     box.style.width = `${startSize + stepSize * i}px`;
     divBox.append(box);
   }
